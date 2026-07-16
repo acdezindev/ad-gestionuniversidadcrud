@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 23-dic-2024 13:10:55 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="MapeoPojos.Estudiante" table="estudiante" catalog="centrouniversitario" optimistic-lock="version">
+        <id name="nif" type="string">
+            <column name="nif" length="9" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="universidad" class="MapeoPojos.Universidad" fetch="select">
+            <column name="codigo_uni" not-null="true" />
+        </many-to-one>
+        <property name="nombre" type="string">
+            <column name="nombre" length="30" />
+        </property>
+        <property name="apellidos" type="string">
+            <column name="apellidos" length="70" />
+        </property>
+        <property name="fechaNacimiento" type="date">
+            <column name="fecha_nacimiento" length="10" />
+        </property>
+        <property name="direccion" type="string">
+            <column name="direccion" length="50" not-null="true" />
+        </property>
+        <property name="provincia" type="string">
+            <column name="provincia" length="50" not-null="true" />
+        </property>
+        <property name="importeMatricula" type="java.lang.Float">
+            <column name="importe_matricula" precision="6" />
+        </property>
+        <property name="becado" type="java.lang.Boolean">
+            <column name="becado" />
+        </property>
+    </class>
+</hibernate-mapping>

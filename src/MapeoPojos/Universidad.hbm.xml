@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 23-dic-2024 13:10:55 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="MapeoPojos.Universidad" table="universidad" catalog="centrouniversitario" optimistic-lock="version">
+        <id name="codigo" type="int">
+            <column name="codigo" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="40" not-null="true" />
+        </property>
+        <property name="provinciaUni" type="string">
+            <column name="provincia_uni" length="40" />
+        </property>
+        <property name="privada" type="java.lang.Boolean">
+            <column name="privada" />
+        </property>
+        <set name="estudiantes" table="estudiante" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="codigo_uni" not-null="true" />
+            </key>
+            <one-to-many class="MapeoPojos.Estudiante" />
+        </set>
+    </class>
+</hibernate-mapping>
