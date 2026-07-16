@@ -10,8 +10,7 @@ Sistema de gestion universitaria que implementa un CRUD completo (Crear, Leer, A
 
 |                                |                                    |                                      |
 |:------------------------------:|:----------------------------------:|:------------------------------------:|
-| ![Listado Universidades](screenshots/UniversidadGestionCRUD.jpg) | ![Listado Estudiantes](screenshots/UniversidadGestionlistado.jpg) | ![Anadir Universidad](screenshots/UniversidadGestionInsertar.jpg) 
-) |
+| ![Listado Universidades](screenshots/UniversidadGestionCRUD.jpg) | ![Listado Estudiantes](screenshots/UniversidadGestionlistado.jpg) | ![Anadir Universidad](screenshots/UniversidadGestionInsertar.jpg)  |
 
 |                                      |                                    |                                    |
 |:------------------------------------:|:----------------------------------:|:----------------------------------:|
