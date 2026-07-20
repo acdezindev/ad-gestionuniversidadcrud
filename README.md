@@ -69,3 +69,38 @@ Sistema de gestion universitaria que implementa un CRUD completo (Crear, Leer, A
 - POJO - Clases que representan las tablas de la base de datos  (Realizada previamente en MySQL WorkBench)
 
 ---
+
+## Requisitos previos
+
+1. **MySQL** instalado y en funcionamiento
+2. Base de datos **universidad** creada con el script `universidad.sql`
+3. Usuario: `root` sin contraseña (o modificar en `hibernate.cfg.xml`)
+4. Librerías necesarias: `mysql-connector-java` y `hibernate` con sus dependencias
+
+---
+
+## Instalación
+
+1. Clona el repositorio
+2. Abre el proyecto en NetBeans
+3. Añade las librerías necesarias (`mysql-connector-java` y `hibernate`)
+4. Ejecuta el script `universidad.sql` en MySQL para crear la base de datos
+5. Ejecuta la aplicación
+
+---
+
+## Autor
+
+**Abraham C**  
+[GitHub](https://github.com/acdezindev) | [LinkedIn](https://www.linkedin.com/in/AbrahamCdev)
+
+---
+
+## Estado de la tarea de formación académica
+
+![Estado](https://img.shields.io/badge/ESTADO-FINALIZADO-brightgreen)
+![Versión](https://img.shields.io/badge/Versión-1.0.0-blue)
+![Java](https://img.shields.io/badge/Java-8-orange)
+![Hibernate](https://img.shields.io/badge/Hibernate-4.3.1-blue)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-blue)
+![Swing](https://img.shields.io/badge/Swing-GUI-green)
