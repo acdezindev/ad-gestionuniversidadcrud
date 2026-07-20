@@ -75,7 +75,7 @@ Sistema de gestion universitaria que implementa un CRUD completo (Crear, Leer, A
 1. **MySQL** instalado y en funcionamiento
 2. Base de datos **universidad** creada con el script `universidad.sql`
 3. Usuario: `root` sin contraseña (o modificar en `hibernate.cfg.xml`)
-4. Librerías necesarias: `mysql-connector-java` y `hibernate` con sus dependencias
+4. Librerías necesarias: `mysql-connector-java` y `hibernate` con sus dependencias.
 
 ---
 
